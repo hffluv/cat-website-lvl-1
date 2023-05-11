@@ -1,0 +1,141 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  
+}
+ body{
+  background-color: rgb(1, 0, 23);
+ }
+ section{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-image: url(hhh.jpg);
+  background-size: cover;
+  background-position: center;
+  gap: 20px;
+  animation: scalup  1.3s forwards ease-in-out;
+
+}
+ h1{
+font-size: 100px;
+color: rgb(238, 205, 138);
+text-align: center;
+text-transform: uppercase;
+z-index: 3;
+letter-spacing: 30px;
+opacity: 0;
+animation: goup 1s forwards ease-in-out;
+animation-delay: 1s ;
+position: relative;
+left: 20px ;
+ }
+
+ h2{
+font-size: 30px;
+color: rgb(240, 211, 177);
+text-align: center;
+z-index: 3;
+letter-spacing: 12px;
+opacity: 0;
+animation: goup 1s forwards ease-in-out;
+animation-delay: 1.3s ;
+
+ }
+
+
+button{
+  background-color:  rgb(238, 205, 138) ;
+  border-radius: 25px;
+  z-index: 3;
+  height: 50px;
+  width: 120px;
+  border: none;
+  font-size: 20px;
+  color: rgb(31, 31, 28);
+  cursor: pointer;
+  margin-right: 8px;
+  transition: color 5s  ;
+  opacity: 0;
+  transform: skewX(-5deg);
+  animation: goup 1s forwards ease-in-out, shake 1s infinite ease-in-out, change 1s infinite  ;
+  animation-timing-function: linear;
+
+  animation-delay: 2s ;
+
+ }
+  
+.button:hover{
+  background-color: beige;
+  color: rgb(235, 190, 135) ;
+}
+
+
+
+
+ div{
+  height: 100%;
+  position: absolute;
+  width: 100% ;
+  background-color: rgba(1, 0, 23, 0.612)  ;
+  
+ }
+
+
+
+@keyframes scalup {
+ 0%{
+   transform: scale(0.9);
+ }
+ 100%{
+   transform: scale(1);
+ }
+}
+ @keyframes goup{
+ 0%{
+   transform: translateY(50px);
+   opacity: 0;
+ }
+ 100%{
+   transform: translateY(0px);
+   opacity: 1;
+ }
+  
+ }
+
+ @keyframes shake{
+  
+
+ 0% {
+  transform: skewX(-5deg);
+}
+
+25% {
+  transform: skewX(5deg);
+}
+
+50% {
+  transform: skewX(-5deg);
+}
+
+75% {
+  transform: skewX(5deg);
+}
+
+100% {
+  transform: skewX(-5deg); 
+}
+
+}
+@keyframes change{
+  0%{color: black;
+  background-color: rgb(235, 190, 135);
+  }
+  100%{
+    color: rgb(235, 190, 135);
+    background-color: rgba(0, 0, 0, 0.886);
+  }
+}
