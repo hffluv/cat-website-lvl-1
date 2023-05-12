@@ -68,14 +68,6 @@ button{
 
  }
   
-.button:hover{
-  background-color: beige;
-  color: rgb(235, 190, 135) ;
-}
-
-
-
-
  div{
   height: 100%;
   position: absolute;
